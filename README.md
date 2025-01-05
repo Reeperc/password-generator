@@ -17,7 +17,7 @@ A simple and secure password generator written in Python. This tool allows users
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/password-generator.git
+   git clone https://github.com/Reeperc/password-generator
    cd password-generator
    ```
 
@@ -28,10 +28,10 @@ A simple and secure password generator written in Python. This tool allows users
 
 ## Usage
 
-To generate a password, run the following command in your terminal:
+To generate a password, run the following command in your terminal (it's just an exmeple):
 
 ```
-python password_generator.py --length 16 --no-digits
+python3 password_generator.py --length 16 --no-digits
 ```
 
 ### Command-Line Options
