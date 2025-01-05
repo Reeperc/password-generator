@@ -41,10 +41,6 @@ python3 password_generator.py --length 16 --no-digits
 - `--no-digits`: Exclude digits from the password.
 - `--no-special-chars`: Exclude special characters from the password.
 
-## Error Handling
-
-If no character categories are selected, the program will display an error message indicating that at least one category must be included.
-
 ## Output
 
 Generated passwords can be displayed directly in the terminal or saved to a file (e.g., `passwords.txt`).
