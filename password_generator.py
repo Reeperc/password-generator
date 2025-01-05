@@ -1,4 +1,4 @@
-# password_generator.py
+#  password_generator.py  
 
 import argparse
 import random
