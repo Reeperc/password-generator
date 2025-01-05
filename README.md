@@ -28,7 +28,7 @@ A simple and secure password generator written in Python. This tool allows users
 
 ## Usage
 
-To generate a password, run the following command in your terminal (it's just an exmeple):
+To generate a password, run the following command in your terminal (it's just an example):
 
 ```
 python3 password_generator.py --length 16 --no-digits
