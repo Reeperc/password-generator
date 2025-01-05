@@ -82,11 +82,7 @@ python3 password_generator.py --batch 5 --length 12 --output passwords.txt
 | `--no-digits`        | Exclude digits.                                                                                   | Included    |
 | `--no-special-chars` | Exclude special characters.                                                                        | Included    |
 | `--batch`            | Number of passwords to generate.                                                                  | 1           |
-| `--output`           | Save generated passwords to the specified file (e.g., `passwords.txt`).                           | None        |
-
----
-
-## Dependencies
+| `--output`   https://github.com
 
 This project uses the following Python libraries:
 - `tkinter` (built-in for GUI)
@@ -124,25 +120,11 @@ brew install python-tk       # For macOS
 
 ---
 
-## Contribution
-
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m "Add new feature"`).
-4. Push to your branch (`git push origin feature-name`).
-5. Open a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
----
-
 ## Acknowledgments
 
 - Inspired by various password management tools.
 - Uses the [Have I Been Pwned API](https://haveibeenpwned.com/) for breach checks.
+
+## Disclaimer
+
+This is a personal/educational project, no license applied. Use it as you see fit!
