@@ -32,15 +32,15 @@ def generate_password(length, use_uppercase, use_digits, use_special_chars, secu
 def main():
     parser = argparse.ArgumentParser(description="Generate a secure password.")
     parser.add_argument('--length', type=int, default=12, help='Length of the password (8-128)')
-    parser.add_argument('--no-uppercase', action='store_false', help='Exclude uppercase letters')
-    parser.add_argument('--no-digits', action='store_false', help='Exclude digits')
-    parser.add_argument('--no-special-chars', action='store_false', help='Exclude special characters')
+    parser.add_argument('--no-uppercase', dest='use_uppercase', action='store_false', help='Exclude uppercase letters')
+    parser.add_argument('--no-digits', dest='use_digits', action='store_false', help='Exclude digits')
+    parser.add_argument('--no-special-chars', dest='use_special_chars', action='store_false', help='Exclude special characters')
     parser.add_argument('--secure', action='store_true', help='Enable secure password mode')
 
     args = parser.parse_args()
 
-    password = generate_password(args.length, args.no_uppercase, args.no_digits, args.no_special_chars, args.secure)
+    password = generate_password(args.length, args.use_uppercase, args.use_digits, args.use_special_chars, args.secure)
     print("Generated Password:", password)
 
 if __name__ == "__main__":
-    main()# password_generator.py
+    main()
