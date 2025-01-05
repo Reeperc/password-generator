@@ -81,8 +81,7 @@ python3 password_generator.py --batch 5 --length 12 --output passwords.txt
 | `--no-uppercase`     | Exclude uppercase letters.                                                                        | Included    |
 | `--no-digits`        | Exclude digits.                                                                                   | Included    |
 | `--no-special-chars` | Exclude special characters.                                                                        | Included    |
-| `--batch`            | Number of passwords to generate.                                                                  | 1           |
-| `--output`   https://github.com
+| `--batch`            | Number of passwords to generate.                                                                  | 1           | 
 
 This project uses the following Python libraries:
 - `tkinter` (built-in for GUI)
