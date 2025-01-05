@@ -15,6 +15,10 @@ A simple yet powerful Python-based **Password Generator** that allows you to gen
   - Password strength evaluator (Weak, Medium, Strong).
   - Adjustable password length using a spinbox.
 
+  Here is a preview of the Password Generator interface:
+
+![Password Generator Interface](img/img.png)
+
 - **CLI (Command-Line Interface):**
   - Generate single or multiple passwords.
   - Save generated passwords to a file.
