@@ -17,7 +17,7 @@ A simple yet powerful Python-based **Password Generator** that allows you to gen
 
   Here is a preview of the Password Generator interface:
 
-  ![Password Generator Interface](img/img.png)
+  ![Password Generator Interface](img/img2.png)
 
 - **CLI (Command-Line Interface):**
   - Generate single or multiple passwords.
