@@ -1,50 +1,144 @@
 # Password Generator
 
-A simple and secure password generator written in Python. This tool allows users to generate random passwords with customizable options, ensuring that the generated passwords meet specific security criteria.
+A simple yet powerful Python-based **Password Generator** that allows you to generate secure and customizable passwords via a **Graphical User Interface (GUI)** or **Command-Line Interface (CLI)**. This project supports various options like including/excluding uppercase letters, digits, and special characters, and features a password strength evaluator.
+
+---
 
 ## Features
 
-- Generate random passwords with a configurable length (8 to 128 characters).
-- Customize character inclusion:
-  - Lowercase letters
-  - Uppercase letters
-  - Digits
-  - Special characters
-- Secure password mode that guarantees at least one uppercase letter, one digit, and one special character.
-- Command-line interface for easy configuration of options.
+- **GUI (Graphical User Interface):**
+  - Easy-to-use interface to configure and generate passwords.
+  - Options to include/exclude:
+    - Uppercase letters
+    - Digits
+    - Special characters
+  - Password strength evaluator (Weak, Medium, Strong).
+  - Adjustable password length using a spinbox.
+
+- **CLI (Command-Line Interface):**
+  - Generate single or multiple passwords.
+  - Save generated passwords to a file.
+  - Customizable options via arguments.
+
+---
 
 ## Installation
 
+### Prerequisites
+1. Ensure **Python 3.6+** is installed on your system.
+2. Install the required dependencies.
+
+### Steps
 1. Clone the repository:
-   ```
-   git clone https://github.com/Reeperc/password-generator
+   ```bash
+   git clone https://github.com/your-username/password-generator.git
    cd password-generator
    ```
-
-2. Install any required libraries (if applicable):
-   ```
+2. Install dependencies:
+   ```bash
    pip install -r requirements.txt
    ```
+   **Note:** If you encounter an issue with `tkinter`, install it using:
+   ```bash
+   sudo apt install python3-tk  # For Ubuntu/Debian-based systems
+   ```
+
+---
 
 ## Usage
 
-To generate a password, run the following command in your terminal (it's just an example):
-
+### Graphical User Interface (GUI)
+Run the following command to open the GUI:
+```bash
+python3 password_generator.py
 ```
-python3 password_generator.py --length 16 --no-digits
+Configure the length and options, then click **Generate** to get your password. The password strength will also be displayed.
+
+---
+
+### Command-Line Interface (CLI)
+Run the script with optional arguments to generate passwords directly in the terminal.
+
+#### Single Password
+```bash
+python3 password_generator.py --length 16
 ```
 
-### Command-Line Options
+#### Multiple Passwords
+Generate multiple passwords and optionally save them to a file:
+```bash
+python3 password_generator.py --batch 5 --length 12 --output passwords.txt
+```
 
-- `--length <length>`: Set the length of the password (default is 12).
-- `--no-uppercase`: Exclude uppercase letters from the password.
-- `--no-digits`: Exclude digits from the password.
-- `--no-special-chars`: Exclude special characters from the password.
+#### CLI Arguments:
+| **Argument**         | **Description**                                                                                   | **Default** |
+|----------------------|---------------------------------------------------------------------------------------------------|-------------|
+| `--length`           | Length of the password (8-128).                                                                   | 12          |
+| `--no-uppercase`     | Exclude uppercase letters.                                                                        | Included    |
+| `--no-digits`        | Exclude digits.                                                                                   | Included    |
+| `--no-special-chars` | Exclude special characters.                                                                        | Included    |
+| `--batch`            | Number of passwords to generate.                                                                  | 1           |
+| `--output`           | Save generated passwords to the specified file (e.g., `passwords.txt`).                           | None        |
 
-## Output
+---
 
-Generated passwords can be displayed directly in the terminal or saved to a file (e.g., `passwords.txt`).
+## Dependencies
+
+This project uses the following Python libraries:
+- `tkinter` (built-in for GUI)
+- `requests` (for checking password breaches using Have I Been Pwned API)
+
+Install all dependencies via:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Example Outputs
+
+### From GUI:
+- Generated Password: `kd<Ne/{<>caLK`
+- Strength: **Strong**
+
+### From CLI:
+```bash
+$ python3 password_generator.py --length 16
+Generated Password: `H!mV4zE9pT@qX2Y$`
+```
+
+---
+
+## Troubleshooting
+
+### Tkinter Issues
+If the GUI doesn't open or you get a `ModuleNotFoundError: No module named 'tkinter'`, install the `tkinter` library:
+```bash
+sudo apt install python3-tk  # For Ubuntu/Debian
+brew install python-tk       # For macOS
+```
+
+---
+
+## Contribution
+
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m "Add new feature"`).
+4. Push to your branch (`git push origin feature-name`).
+5. Open a pull request.
+
+---
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+---
+
+## Acknowledgments
+
+- Inspired by various password management tools.
+- Uses the [Have I Been Pwned API](https://haveibeenpwned.com/) for breach checks.
