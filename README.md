@@ -35,7 +35,7 @@ A simple yet powerful Python-based **Password Generator** that allows you to gen
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/password-generator.git
+   git clone https://github.com/Reeperc/password-generator.git
    cd password-generator
    ```
 2. Install dependencies:
@@ -80,7 +80,7 @@ python3 password_generator.py --batch 5 --length 12 --output passwords.txt
 | `--length`           | Length of the password (8-128).                                                                   | 12          |
 | `--no-uppercase`     | Exclude uppercase letters.                                                                        | Included    |
 | `--no-digits`        | Exclude digits.                                                                                   | Included    |
-| `--no-special-chars` | Exclude special characters.                                                                        | Included    |
+| `--no-special-chars` | Exclude special characters.                                                                       | Included    |
 | `--batch`            | Number of passwords to generate.                                                                  | 1           | 
 
 This project uses the following Python libraries:
